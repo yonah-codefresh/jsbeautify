@@ -1,0 +1,28 @@
+{
+  "name": "jsbeautify",
+  "version": "1.0.0",
+  "description": "CodeFresh example of Orion plugin",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/guy-codefresh/jsbeautify.git"
+  },
+  "keywords": [
+    "Orion",
+    "plugin",
+    "beautify",
+    "codefresh"
+  ],
+  "author": "Guy Balteriski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guy-codefresh/jsbeautify/issues"
+  },
+  "homepage": "https://github.com/guy-codefresh/jsbeautify",
+  "dependencies": {
+    "express": "^4.12.0"
+  }
+}
