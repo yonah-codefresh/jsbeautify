@@ -37,3 +37,5 @@ Once you would like to beautify it, just click Tools>Beautify and it should see 
 If you are only updating the plugin logic, all you have to do is refresh your page and the changes will get into effect.
 If you would like to add/remove/update Orion extension points, you will need to get into the plugins page and click the refresh button on our specific plugin.
 
+## You can see plugin hosted on Heroku 
+https://orionplugin.herokuapp.com/
