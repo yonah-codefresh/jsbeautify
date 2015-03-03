@@ -1,71 +1,102 @@
 <html>
- <head>
- 	<title>Beautify JS</title>
- 	<script src="js/plugin.js"></script>
- 	<script src="js/jsbeautify.js"></script>
- 	<script>
- 		var headers = {
-			name: "BeautifyPlugin", version: "1.0", description: "Beautify editor code."
-		};
-		var provider = new orion.PluginProvider(headers);
-		var indent_size = 4;
-		var indent_char = ' ';
-		
-		var serviceImpl = {
-			run: function(selectedText, text, selection) {
-				var toFormat = selectedText || text;
-				var formatted = js_beautify(toFormat,{
-					indent_size: indent_size,
-					indent_char: indent_char
-				});
-				return (selectedText ? 
-						formatted : 
-						{text: formatted});
-			},
-			updated: function(properties) {
-				if (properties) {
-					var value = JSON.parse(properties.indent_style);
-					indent_size = value.indent_size;
-					indent_char = value.indent_char;
-				}
-			}
+<head>
+    <title>Beautify JS</title>
+    <script src="js/plugin.js"></script>
+    <script src="js/jsbeautify.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <script>
+        var headers = {
+            name: "BeautifyPlugin", version: "1.0", description: "Beautify editor code."
+        };
+        var provider = new orion.PluginProvider(headers);
+        var indent_size = 4;
+        var indent_char = ' ';
 
-		};
-    	var serviceProperties = {
-    		name: "Beautify JS",
- 			contentType: ["application/javascript", "text/html", "application/json"],
- 			pid: "beautify.plugin"
-  		};
-   		provider.registerService(["orion.edit.command", "orion.cm.managedservice"],
-								serviceImpl, serviceProperties);
-								
-								
-		var	PREF_VALUE_4_SPACES = '{"indent_size": 4, "indent_char": "A"}',
-			PREF_VALUE_1_TAB    = '{"indent_size": 1, "indent_char": "\\t"}';
-		
-		provider.registerServiceProvider("orion.core.setting", {}, {
-			settings: [{
-				pid: 'beautify.plugin',
-				name: 'Beautify JS',
-				tags: ['beautify','javascript','js','jsbeautify','formatting'],
-				category: 'Formatting',
-				properties: [{
-					id: 'indent_style',
-					name: 'Indent Style',
-					defaultValue: PREF_VALUE_4_SPACES,
-					options: [
-						{label: "1 Tab", value: PREF_VALUE_1_TAB},
-						{label: "4 Spaces", value: PREF_VALUE_4_SPACES}
-					],
-					type: 'string'
-				}]
-			}]
-		});
-								
-    	provider.connect();
- 	</script>
- </head>
- <body>
- 	CodeFresh JS Beautify Example
- </body>
+        var serviceImpl = {
+            run: function (selectedText, text, selection) {
+                var toFormat = selectedText || text;
+                var formatted = js_beautify(toFormat, {
+                    indent_size: indent_size,
+                    indent_char: indent_char
+                });
+                return (selectedText ?
+                        formatted :
+                {text: formatted});
+            },
+            updated: function (properties) {
+                if (properties) {
+                    var value = JSON.parse(properties.indent_style);
+                    indent_size = value.indent_size;
+                    indent_char = value.indent_char;
+                }
+            }
+
+        };
+        var serviceProperties = {
+            name: "Beautify JS",
+            contentType: ["application/javascript", "text/html", "application/json"],
+            pid: "beautify.plugin"
+        };
+        provider.registerService(["orion.edit.command", "orion.cm.managedservice"],
+                serviceImpl, serviceProperties);
+
+
+        var PREF_VALUE_4_SPACES = '{"indent_size": 4, "indent_char": "A"}',
+                PREF_VALUE_1_TAB = '{"indent_size": 1, "indent_char": "\\t"}';
+
+        provider.registerServiceProvider("orion.core.setting", {}, {
+            settings: [{
+                pid: 'beautify.plugin',
+                name: 'Beautify JS',
+                tags: ['beautify', 'javascript', 'js', 'jsbeautify', 'formatting'],
+                category: 'Formatting',
+                properties: [{
+                    id: 'indent_style',
+                    name: 'Indent Style',
+                    defaultValue: PREF_VALUE_4_SPACES,
+                    options: [
+                        {label: "1 Tab", value: PREF_VALUE_1_TAB},
+                        {label: "4 Spaces", value: PREF_VALUE_4_SPACES}
+                    ],
+                    type: 'string'
+                }]
+            }]
+        });
+
+        provider.connect();
+    </script>
+</head>
+<body>
+
+<header class="dark_bg">
+    <div class="container">
+        <div class="logo"></div>
+
+        <h1>CodeFresh JS Beautify Example</h1>
+        <h2>heading 2</h2>
+        <h3>heading 3</h3>
+    </div>
+</header>
+<section>
+    <div class="container">
+        some bla bla here
+        <button class="btn btn-default">Something here</button>
+        <button class="btn btn-primary">Something here</button>
+        <button class="btn btn-info">Something here</button>
+        <button class="btn btn-warning">Something here</button>
+        <button class="btn btn-success">Something here</button> <br>
+
+        <a href="codefresh.io" target="_blank">Some link</a>
+    </div>
+</section>
+<footer>
+    <div class="container">
+        some footer
+
+
+        <a href="codefresh.io" target="_blank">Some link</a>
+    </div>
+</footer>
+</body>
 </html>
