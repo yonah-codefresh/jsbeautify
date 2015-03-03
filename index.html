@@ -73,29 +73,31 @@
     <div class="container">
         <div class="logo"></div>
 
-        <h1>CodeFresh JS Beautify Example</h1>
-        <h2>heading 2</h2>
-        <h3>heading 3</h3>
+        <h1>Orion JS Beautify Example</h1>
+        <h3>Example of simple orion plugin</h3>
     </div>
 </header>
 <section>
     <div class="container">
-        some bla bla here
-        <button class="btn btn-default">Something here</button>
-        <button class="btn btn-primary">Something here</button>
-        <button class="btn btn-info">Something here</button>
-        <button class="btn btn-warning">Something here</button>
-        <button class="btn btn-success">Something here</button> <br>
+		<script>
+			if (window.location.protocol === 'http:') {
+				var url = 'http://ide.codefresh.io/settings/settings.html#,category=plugins,installPlugin=' + window.location;
+				document.write('<a href="' + url +'" class="btn btn-default">Install in codefresh</a>');
+				document.write('<a href="https://' + window.location.hostname + window.location.pathname + '" class="btn btn-primary">Switch to OrionHUB mode</a>');
+			} else {
+				var url = 'http://ide.codefresh.io/settings/settings.html#,category=plugins,installPlugin=http://' + window.location.hostname + window.location.pathname;
+				document.write('<a href="' + url +'" class="btn btn-default">Install in codefresh</a>');
 
-        <a href="codefresh.io" target="_blank">Some link</a>
+				url = 'https://orionhub.org/settings/settings.html#,category=plugins,installPlugin=https://' + window.location;
+				document.write('<a href="' + url +'" class="btn btn-primary">Install in OrionHUB</a>');
+			}
+		</script>
     </div>
 </section>
 <footer>
     <div class="container">
-        some footer
-
-
-        <a href="codefresh.io" target="_blank">Some link</a>
+		under Eclipse Public License v1.0 (http://www.eclipse.org/legal/epl-v10.html),
+		and the Eclipse Distribution License v1.0 (http://www.eclipse.org/org/documents/edl-v10.html)
     </div>
 </footer>
 </body>
