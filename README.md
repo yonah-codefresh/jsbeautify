@@ -4,10 +4,12 @@ The purpose of this example is to show how to write simple Orion plugin, extend 
 In this example we have developed very simple JS beautify plugin that will add menu item ('Beautify JS' under the 'Tools' drop down menu) that cab be executed on any .js file (visible when a JS file is opened).
 This implementation is also using Orion settings mechanism to extend the user experience by letting him select how to use the beautify logic.
 
+
 ## Code It
 
-You can use CodeFresh system in order to start coding in just one click.
-Just open account in CodeFresh, add this repository, click code it and you are in the game.
+There are 2 options of how to run and try out this plugin.
+- Go to [Codefresh Labs](http://www.codefresh.io/labs) and click on the Orion plug-in example
+- Clone the repo locally and host it on any other server
 
 ## Install Your plugin
 Once you downloaded the git repository or opened it in CodeFresh code, open terminal and run the following:
