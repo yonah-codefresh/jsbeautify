@@ -11,6 +11,15 @@ There are 2 options of how to run and try out this plugin.
 - Go to [Codefresh Labs](http://www.codefresh.io/labs) and click on the Orion plug-in example
 - Clone the repo locally and host it on any other server
 
+
+## Using [Codefresh Labs](http://www.codefresh.io/labs)
+- View or make any change to the plug-in implementation in the index.html file
+- Click on the run button to host your plug-in in the server
+- Open the URL to the plug-in (you need the URL to install the plug-in)
+- In the opened URL you can either 
+--Click on the 'install in caodefresh' to install the plug-in on the codefresh. The link will take you tot he codeffresh ide setting. install the plug-in then refresh your IDE
+--Copy the URL and open any Orion setting page and install the plug-in using the copied URL
+
 ## Install Your plugin
 Once you downloaded the git repository or opened it in CodeFresh code, open terminal and run the following:
 npm install
