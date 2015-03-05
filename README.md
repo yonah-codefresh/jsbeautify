@@ -20,7 +20,7 @@ There are 2 options of how to run and try out this plugin.
 --Click on the 'install in caodefresh' to install the plug-in on the codefresh. The link will take you tot he codeffresh ide setting. install the plug-in then refresh your IDE
 --Copy the URL and open any Orion setting page and install the plug-in using the copied URL
 
-## Install Your plugin
+## Install Your plugin locally
 Once you downloaded the git repository or opened it in CodeFresh code, open terminal and run the following:
 npm install
 npm start
