@@ -21,22 +21,21 @@ There are 2 options of how to run and try out this plugin.
 --Copy the URL and open any Orion setting page and install the plug-in using the copied URL
 
 ## Install Your plugin locally
-Once you downloaded the git repository or opened it in CodeFresh code, open terminal and run the following:
+Once you downloaded the git repository, open terminal and run the following:
 npm install
 npm start
 
-If you are running local you will need the following URL:
+if you run it locally your plug-in URL is as follow:
 
 [http://localhost:9000/](http://localhost:9000/)
 
-If you are running using CodeFresh use the following URL:
 
-[http://......./](http://......./)
+In order to install it in Orion IDE go tot he setting page in the Orion IDE.
+If you dont have any available Orion IDE you can open an account at Orion Hub
 
-You will now need to get into Orion editor, if you are in CodeFresh you are already inside one, otherwise you can use
-[http://orionhub.org](http://orionhub.org), open account.
+[http://orionhub.org](http://orionhub.org)
 
-Get into the settings page, then into the plugins category, click the install button, put your URL and approve it.
+In the setting page, go to plugins category, click the install button, put the plug-in URL and approve it.
 
 ## Test It
 
