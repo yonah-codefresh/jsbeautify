@@ -12,7 +12,7 @@
       "Space": "Node"
     }
   },
-  "Url": "https://ws-x1b0qizo.env.codefresh.io/",
+  "Url": "http://ws-qjisklno.env.codefresh.io:9000/",
   "Path": "",
   "Type": "NodeRunner"
 }
