@@ -4,8 +4,6 @@ var app = express();
 
 app.use(express.static(__dirname));
 
-// test 123
-
 var server = app.listen(9000, function () {
 
   var host = server.address().address;
