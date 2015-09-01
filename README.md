@@ -1,4 +1,4 @@
-9# CodeFresh beautify example plugin
+10# CodeFresh beautify example plugin
 
 
 The purpose of this example is to show how to write simple Orion plugin, extend it and work with it
