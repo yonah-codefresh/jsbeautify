@@ -1,4 +1,4 @@
-hhhhh
+hhhhhh
 5# CodeFresh beautify example plugin
 h
 
