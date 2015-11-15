@@ -1,5 +1,4 @@
-ahdshhhhh
-5# CodeFresh beautify example plugin
+# CodeFresh beautify example plugin
 h
 
 The purpose of this example is to show how to write simple Orion plugin, extend it and work with it
@@ -51,42 +50,3 @@ If you would like to add/remove/update Orion extension points, you will need to 
 
 ## You can see plugin hosted on Heroku 
 https://orionplugin.herokuapp.com/
-
-
-1
-2
-3
-4
-5
-1
-2
-3
-4
-5
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-2
-3
-4
-5
-6
